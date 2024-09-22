@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع إخباري</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/log.png" alt="موقع إخباري" class="custom-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#political">الأخبار السياسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#technology">التكنولوجيا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#other">منوعة</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control custom-search mr-sm-2" type="search" placeholder="بحث"
+                            aria-label="Search">
+                        <button class="btn btn-custom-search my-2 my-sm-0" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <div class="nav-buttons">
+                        <a class="btn btn-custom-login mr-2" href="login.html">
+                            <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+                        </a>
+                        <a class="btn btn-custom-register" href="register.html">
+                            <i class="fas fa-user-plus"></i> التسجيل
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slide1.jpg" alt="الصورة الأولى">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>عنوان الخبر الأول</h5>
+                    <p>وصف مختصر للخبر الأول</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide3.png" alt="الصورة الثانية">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>عنوان الخبر الثاني</h5>
+                    <p>وصف مختصر للخبر الثاني</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide4.jpg" alt="الصورة الثالثة">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>عنوان الخبر الثالث</h5>
+                    <p>وصف مختصر للخبر الثالث</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">السابق</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">التالي</span>
+        </a>
+    </section>
+
+    <main class="container mt-4">
+        <section id="political" class="political">
+            <h2 class="mb-4 text-right section-title">الأخبار السياسية</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card card-news">
+                        <img src="img/gz.jpg" class="card-img-top" alt="خبر سياسي">
+                        <div class="card-body">
+                            <h5 class="card-title">حرب غزة: التطورات الأخيرة</h5>
+                            <p class="card-text">آخر المستجدات في الصراع المستمر وجهود السلام الدولية...</p>
+                            <a href="gizeh.html" class="btn btn-primary">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-news">
+                        <img src="img/s1.jpeg" class="card-img-top" alt="خبر سياسي">
+                        <div class="card-body">
+                            <h5 class="card-title">انتخابات الرئاسة الأمريكية 2024</h5>
+                            <p class="card-text">استعدادات الأحزاب والمرشحين للانتخابات القادمة...</p>
+                            <a href="article-politics.html" class="btn btn-primary">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-news">
+                        <img src="img/mn.jpg" class="card-img-top" alt="خبر سياسي">
+                        <div class="card-body">
+                            <h5 class="card-title">قمة المناخ العالمية</h5>
+                            <p class="card-text">قادة العالم يجتمعون لمناقشة التغير المناخي وسبل مواجهته...</p>
+                            <a href="article-politics.html" class="btn btn-primary">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology" class="technology">
+            <h2 class="mb-4 text-right section-title">الأخبار التكنولوجية</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card card-news">
+                        <img src="img/iphone16.jpg" class="card-img-top" alt="خبر تكنولوجي">
+                        <div class="card-body">
+                            <h5 class="card-title">إطلاق هاتف آيفون 16</h5>
+                            <p class="card-text">أبل تكشف عن أحدث إصداراتها مع ميزات ذكاء اصطناعي متقدمة...</p>
+                            <a href="article-tech.html" class="btn btn-primary">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-news">
+                        <img src="img/rebort.jpeg" class="card-img-top" alt="خبر تكنولوجي">
+                        <div class="card-body">
+                            <h5 class="card-title">ثورة في عالم الروبوتات</h5>
+                            <p class="card-text">تطورات جديدة في مجال الروبوتات تغير مستقبل الصناعة...</p>
+                            <a href="article-tech.html" class="btn btn-primary">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-news">
+                        <img src="img/aft.png" class="card-img-top" alt="خبر تكنولوجي">
+                        <div class="card-body">
+                            <h5 class="card-title">تقنيات الواقع الافتراضي</h5>
+                            <p class="card-text">كيف تغير تقنيات الواقع الافتراضي طريقة تعليمنا وعملنا...</p>
+                            <a href="article-tech.html" class="btn btn-primary">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="other" class="other">
+            <h2 class="mb-4 text-right section-title">الأخبار المنوعة</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card card-news">
+                        <img src="img/canCenm.jpg" class="card-img-top" alt="خبر منوع">
+                        <div class="card-body">
+                            <h5 class="card-title">مهرجان كان السينمائي 2024</h5>
+                            <p class="card-text">أبرز الأفلام والنجوم في الدورة الجديدة من المهرجان...</p>
+                            <a href="article-misc.html" class="btn btn-primary">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-news">
+                        <img src="img/egpt1.jpeg" class="card-img-top" alt="خبر منوع">
+                        <div class="card-body">
+                            <h5 class="card-title">اكتشاف أثري جديد في مصر</h5>
+                            <p class="card-text">علماء الآثار يكتشفون مقبرة فرعونية تعود لـ 3000 عام...</p>
+                            <a href="article-misc.html" class="btn btn-primary">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card card-news">
+                        <img src="img/pares1.jpg" class="card-img-top" alt="خبر منوع">
+                        <div class="card-body">
+                            <h5 class="card-title">أولمبياد باريس 2024</h5>
+                            <p class="card-text">استعدادات المدينة والرياضيين لدورة الألعاب الأولمبية...</p>
+                            <a href="article-misc.html" class="btn btn-primary">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">الرئيسية</a></li>
+                        <li><a href="#" class="text-white">الأخبار السياسية</a></li>
+                        <li><a href="#" class="text-white">التكنولوجيا</a></li>
+                        <li><a href="#" class="text-white">منوعة</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>تواصل معنا</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope"></i> info@newssite.com</li>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> شارع الأخبار، المدينة</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>تابعنا على</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-white"><i
+                                    class="fab fa-facebook fa-2x"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i
+                                    class="fab fa-twitter fa-2x"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i
+                                    class="fab fa-instagram fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p>جميع الحقوق محفوظة © 2024 موقع إخباري</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
